@@ -13,7 +13,7 @@ return function(direction)
         anchor = "NE",
         width = state.message.width,
         height = state.message.height,
-        col = vim.opt.columns:get(),
+        col = 0,
         row = next_row,
         border = "rounded",
         style = "minimal",
@@ -21,7 +21,7 @@ return function(direction)
     end,
     function()
       return {
-        col = { vim.opt.columns:get() },
+        col = { 0 },
         time = true,
       }
     end,
